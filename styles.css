@@ -223,36 +223,41 @@ header {
   margin-bottom: 16px;
 }
 
-/* FEATURES */
+/* FEATURED */
 
-#features {
+#featured {
   background-color: rgba(115, 66, 214, 0.1);
   padding-top: 8vw;
 }
 
 .books {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .book {
   width: 25%;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
-/* WORKING ON HOW TO MAKE THE BOOK CARDS DESCRIPTION HAVE SPACE BETWEEN THE TITLE, ELEMENT AND PRICE */
 .book__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1; /* LAST THING YOU WORKED ON! 52:00*/
+  justify-content: flex-start;
+  margin-top: auto;
+  flex: 1 1 100px;
 }
 .book__img {
-  max-height: 370px;
+  height: 300px;
+  width: auto;
   transition: transform 300ms ease;
   padding: 0;
   cursor: no-drop;
 }
 .book__img--wrapper {
   overflow: hidden;
+
   margin-bottom: 8px;
   border-radius: 8px;
   display: flex;
@@ -280,4 +285,9 @@ header {
 .book__price--normal {
   text-decoration: line-through;
   color: #888;
+}
+
+/* LATEST BOOKS */
+#latest {
+  background-color: rgba(115, 66, 214, 0.17);
 }
